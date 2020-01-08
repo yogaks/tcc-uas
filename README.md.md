@@ -168,6 +168,3 @@ $ kubectl get services
     NAME     TYPE   CLUSTER-IP EXTERNAL-IP PORT(S)  AGE  
     kubernetes  ClusterIP 10.96.0.1 <none> 443/TCP 20m
     python-flask LoadBalancer 10.96.176.166 <pending> 5000:31294/TCP 19s  
-
-![img](1.PNG)  
-![img](2.png)  
