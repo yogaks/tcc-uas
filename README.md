@@ -170,7 +170,5 @@ $ kubectl get services
     python-flask LoadBalancer 10.96.176.166 <pending> 5000:31294/TCP 19s  
   
 
-  
-![img](11.PNG)
-![img](22.png) 
- 
+![img](11.png)
+![img](22.png)  
