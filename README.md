@@ -29,9 +29,9 @@ commit: 54f28ac5d3a815d1196cd5d57d707439ee4bb392
 * dashboard was successfully enabled
 Kubernetes Started  
 
-## $ mkdir yogaks  
-## $ cd yogaks/  
-## $ nano app.py 
+### $ mkdir yogaks  
+### $ cd yogaks/  
+### $ nano app.py 
 
     from flask import Flask  
     from flask_restful import Resource, Api
@@ -48,12 +48,12 @@ Kubernetes Started
     if __name__ == '__main__':  
         app.run(debug=True, host='0.0.0.0')
 
-## $ nano requirements.txt  
+### $ nano requirements.txt  
 
     flask  
     flask_restful  
 
-## $ nano Dockerfile  
+### $ nano Dockerfile  
 
     FROM python:2.7  
     COPY . /app  
@@ -61,7 +61,7 @@ Kubernetes Started
     RUN pip install -r requirements.txt  
     ENTRYPOINT ["python"]  
     CMD ["app.py"]  
-## $ docker build -t yogaks1234/yogaks:v1 .  
+### $ docker build -t yogaks1234/yogaks:v1 .  
 Sending build context to Docker daemon  4.096kB
 Step 1/6 : FROM python:2.7
 2.7: Pulling from library/python
@@ -121,7 +121,7 @@ Removing intermediate container dd449e9ec332
 Successfully built ddacbfd7072f
 Successfully tagged yogaks1234/yogaks:v1  
 
-## $ docker login  
+### $ docker login  
 Login with your Docker ID to push and pull images from Docker Hub. If you don't have a Docker ID, head over to https://hub.docker.com to create one.
 Username: yogaks1234
 Password:
@@ -130,7 +130,7 @@ Configure a credential helper to remove this warning. See
 https://docs.docker.com/engine/reference/commandline/login/#credentials-store
 Login Succeeded  
 
-## $ docker push yogaks1234/yogaks:v1  
+### $ docker push yogaks1234/yogaks:v1  
 The push refers to repository [docker.io/yogaks1234/yogaks]
 c4e38d3007a4: Preparing
 328aaa4964da: Preparing
